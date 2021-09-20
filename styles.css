@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+p{
+    margin:0px;
+    padding:0px;
+}
 
 body{
     width:100%;
@@ -9,29 +13,57 @@ body{
     
 
 }
-.container, footer{
+.container{
     background-color: #1F2937;
-    padding:20px;
+    padding:5px 50px 90px 50px;
 }
 
 .headerList{ /*Only one ul*/
     list-style: none;
-    font-size: 18px;
+    font-size: 15px;
     color:#E5E7Eb;
     display: flex;
     gap:20px;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.headLogo{
+    font-size:48px
+}
 .quote{
     background-color: #E5E7Eb;
     color:#1F2937;
-    font-size: 36px;
+    font-size: 20px;
+    font-weight:2px;
     font-style: italic;
+    text-align: left;
+    padding:20px 160px;
+}
+
+.author{
+    text-align: right;
+    font-weight: bold;
 }
 .description>h1{
-    font-size:48px;
+    font-size:30px;
     color:#F9FAF8;
     font-weight: bolder;
+}
+
+.description>button{
+    background-color: #3882f6;
+    border:none;
+    color:white;
+    width:100px;
+    height:30px;
+    padding:3px;
+    margin-top:5px;
+    border-radius:5px;
 }
 
 .description>p{
@@ -45,9 +77,15 @@ header h1{
 }
 
 .img-box{
-    background-color: #E5E7Eb;
-    width:550px;
-    height: 250px;
+    background-color: rgb(121, 121, 121);
+    color:white;
+    width:300px;
+    height: 150px;
+    transform-origin: top right; /* changes the ref point for scaling */
+    scale:1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header{
@@ -58,6 +96,7 @@ header{
 .hero{
     display:flex;
     justify-content: space-between;
+    
 }
 
 .description{
@@ -67,8 +106,78 @@ header{
 
 .main-content{
     text-align: center;
+    padding: 50px;
+    padding-top:20px;
 }
 
-.quote{
+
+.boxes{
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+    gap:200px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+}
+.box-placeholder{
+    border:solid blue;
+    height:100px;
+    width:100px;
+    border-radius: 10px;
+}
+.box>p{
+    margin-top:10px;
+}
+.sign-Up{
+    display: flex;
+    justify-content: center;
     
+}
+
+
+.actionTime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3882f6;
+    padding:20px;
+    border-radius: 5px;
+    height: 100px;
+    margin:20px 50px;
+    gap:90px;
+}
+.actionTime>button{
+    height:50px;
+    background-color: #3882f6;
+    border-color: white;
+    color:white;
+    border-radius: 5px;
+    border-style: solid;
+    text-align: center;
+}
+
+.signUpText{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
+
+/* used to centralize all containers */
+.centralizer{
+    padding-left: 200px;
+    padding-right:200px;
+}
+
+footer{
+    background-color: #1F2937;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    color:white;
 }
